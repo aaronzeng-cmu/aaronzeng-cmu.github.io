@@ -197,6 +197,7 @@ exclude:
   - _pages/teaching.md
   - _pages/profiles.md
   - _pages/books.md
+  - _pages/dropdown.md
   - _posts/
   - _projects/
   - _bibliography/
