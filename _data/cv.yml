@@ -3,8 +3,12 @@
   contents:
     - name: Full Name
       value: Xiangjian Zeng
+    - name: Email
+      value: azeng@mit.edu
+    - name: Phone
+      value: (412) 579-1999
     - name: Current Position
-      value: Graduate Student
+      value: Ph.D. Student, Electrical Engineering and Computer Science
     - name: Institution
       value: Massachusetts Institute of Technology
     - name: Languages
@@ -13,113 +17,142 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD Student
-      institution: Massachusetts Institute of Technology, Cambridge, MA, USA
+    - title: Ph.D. in Electrical Engineering and Computer Science
+      institution: Massachusetts Institute of Technology, Cambridge, MA
       year: Present
       description:
-        - Pursuing graduate degree in Electrical Engineering and Computer Science
-        - Research focus on neuroscience and medical imaging
-        - Active in academic research and coursework
-    - title: Master's Degree
-      institution: Carnegie Mellon University
-      year: 2023
+        - "GPA: 5.00/5.00"
+    - title: M.S. in Electrical and Computer Engineering
+      institution: Carnegie Mellon University, Pittsburgh, PA
+      year: 12/2023
       description:
-        - Master's degree in Electrical and Computer Engineering
-    - title: Bachelor's Degree
-      institution: University of California, San Diego
-      year: 2020
+        - "GPA: 4.00/4.00"
+    - title: B.S. in Electrical and Computer Engineering (Minor in Cognitive Science)
+      institution: University of California San Diego, La Jolla, CA
+      year: 12/2020
       description:
-        - Bachelor's degree in Electrical and Computer Engineering
-- title: Experience
-  type: time_table
-  contents:
-    - title: Research Assistant
-      institution: Lewis Lab, Massachusetts Institute of Technology
-      year: 09/2024 - Present
-      description:
-        - Design algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep to enhance waste clearance
-        - Working on closed-loop auditory modulation of cerebrospinal fluid during sleep
-        - Expected completion: 06/2030
-    - title: Research Assistant
-      institution: Insanally Lab, University of Pittsburgh
-      year: 05/2023 - 08/2024
-      description:
-        - Developed an ensemble decoder in Python that incorporates information from multiple neurons to predict mouse behavior in auditory discrimination tasks
-        - Revealed the significance of non-classically-response neurons in task learning, published findings in paper in review
-        - Collaborated with advisor to design a spiking RNN in Python and Julia following biological constraints to simulate cerebral mechanisms
-        - Presented results at conference as first author
-    - title: Research Assistant
-      institution: Chamanzar Lab, Carnegie Mellon University
-      year: 05/2022 - 04/2023
-      description:
-        - Created a neural optical probe characterization system based on light scattering
-        - Incorporated systems consisting of robotics, computer vision, and signal processing
-        - Published characterization performance that's previously only obtainable by destructive methods as first author
-    - title: Research Assistant
-      institution: Lerman Lab, UC San Diego
-      year: 03/2020 - 01/2021
-      description:
-        - Led research and implementation of an adaptive filtering algorithm to eliminate powerline noise contaminating peripheral nerve recordings
-        - Prototyped a hardware demo achieving 45dB noise reduction in 60Hz band
-        - Presented a conference paper on project as first author
-        - Created signal cleaning and processing scripts in Matlab for experiment data on magnetic nervous system recordings
-        - Ran test subject for human trials in neuroscience studies involving electric stimulation
-    - title: Research Assistant
-      institution: Spitzer Lab, UC San Diego
-      year: 10/2019 - 12/2020
-      description:
-        - Developed an automatic cell recognition program for fluorescence brain splices in Matlab utilizing correlation to count and map brain cells
-        - Obtained accuracy close to expert's manual selection
-    - title: Research Assistant
-      institution: Neuroelectronics Group, La Jolla, San Diego
-      year: 07/2019 - 08/2019
-      description:
-        - Created and soldered a PCB design using Altium for an amplifier chip to be used in in vivo cell recording
-        - Produced a miniature board with size 3cm*1cm and more than two times smaller than previous design
+        - "GPA: 3.91/4.00"
+        - Magna Cum Laude
 
-- title: Research Projects
+- title: Research Experience
   type: time_table
   contents:
     - title: Closed-loop Auditory Modulation of Cerebrospinal Fluid during Sleep
+      institution: Lewis Lab, Massachusetts Institute of Technology, Cambridge, MA
       year: 09/2024 - Present
-      description: Design algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep to enhance waste clearance.
+      description:
+        - Design machine-learning-based algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep to enhance waste clearance
+        - Suggest new potential intervention for brain aging which does not exist in the field
+        - Present results at conference as first author
     - title: Bayesian Ensemble Neural Decoding
+      institution: Insanally Lab, University of Pittsburgh, Pittsburgh, PA
       year: 05/2023 - 08/2024
-      description: Developed an ensemble decoder in Python that incorporates information from multiple neurons to predict mouse behavior in auditory discrimination tasks.
-    - title: Spiking RNN Simulation
+      description:
+        - Developed an ensemble decoder in Python that incorporates information from multiple neurons to predict mouse behavior in auditory discrimination tasks
+        - Revealed the significance of non-classically-response neurons in task learning, and published the findings in a paper in review
+    - title: Spiking Recurrent Neural Network Simulation of the Brain
+      institution: Insanally Lab, University of Pittsburgh, Pittsburgh, PA
       year: 05/2023 - 08/2024
-      description: Collaborated to design a spiking RNN in Python and Julia following biological constraints to simulate cerebral mechanisms in mouse auditory discrimination tasks.
+      description:
+        - Designed a spiking Recurrent Neural Network in Python and Julia that follows biological constraints to simulate cerebral mechanisms in mouse auditory discrimination tasks
+        - Expanded the simulation to discover how a flexible network is attained in long-term training, and first authored a paper in preparation
     - title: Neural Probe Waveguide Characterization System
+      institution: Chamanzar Lab, Carnegie Mellon University, Pittsburgh, PA
       year: 05/2022 - 04/2023
-      description: Created a neural optical probe characterization system based on light scattering, incorporating robotics, computer vision, and signal processing.
+      description:
+        - Created a neural optical probe characterization system based on light scattering, incorporating robotics, computer vision, and signal processing
+        - Published a characterization performance that's previously only obtainable by destructive methods as first author
     - title: Adaptive Neural Signal Noise Cancellation
+      institution: Lerman Lab, UC San Diego, La Jolla, CA
       year: 03/2020 - 01/2021
-      description: Led research and implementation of an adaptive filtering algorithm to eliminate powerline noise contaminating peripheral nerve recordings.
+      description:
+        - Led research and implementation of an adaptive filtering algorithm to eliminate powerline noise contaminating peripheral nerve recordings
+        - Prototyped a hardware demo achieving 45dB noise reduction in 60Hz band, and presented a conference paper on project as first author
+    - title: Peripheral Nerve Magnetoneurography
+      institution: Lerman Lab, UC San Diego, La Jolla, CA
+      year: 03/2020 - 01/2021
+      description:
+        - Created signal cleaning and processing scripts in Matlab for experiment data on magnetic nervous system recordings by tailoring functions to individual signal, contributing to publication of another paper
+        - Ran test subject for human trials in neuroscience studies involving electric stimulation
     - title: Automated Fluorescence Cell Counting
+      institution: Spitzer Lab, UC San Diego, La Jolla, CA
       year: 10/2019 - 12/2020
-      description: Developed an automatic cell recognition program for fluorescence brain splices in Matlab utilizing correlation to count and map brain cells.
+      description:
+        - Developed an automatic cell recognition program for fluorescence brain slices in Matlab utilizing correlation to count and map a variety of brain cells
+        - Obtained an accuracy that's close to expert's manual selection
+    - title: Neural Recording Amplifier PCB Design
+      institution: Neuroelectronics Group, La Jolla, San Diego, CA
+      year: 07/2019 - 08/2019
+      description:
+        - Created and soldered a PCB design using Altium for an amplifier chip to be used in in vivo cell recording
+        - Produced a miniature board with size 3cm×1cm and more than two times smaller than previous design
 
-- title: Honors and Awards
+- title: Fellowship Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - MIT Artificial Intelligence and Wellness Fellowship
     - year: 2020
       items:
-        - Magna Cum Laude - University of California San Diego
-    - year: Present
+        - Magna Cum Laude, University of California San Diego
+
+- title: Academic Projects
+  type: time_table
+  contents:
+    - title: Deep Learning Automatic Fake News Detection
+      year: Fall 2022
+      description:
+        - Jointly created a BERT based language model to automatically extract relevant evidence and classify misinformation from political statements, achieving a two-way accuracy of 72%
+    - title: EEG-based Music Recommendation
+      year: Fall 2022
+      description:
+        - Led writing a K Nearest Neighbor (KNN) prediction system to automatically detect musical preferences from brain EEG recordings of listening subjects and update music recommendation in real-time
+
+- title: Relevant Courses
+  type: nested_list
+  contents:
+    - title: Computing
       items:
-        - PhD Student at Massachusetts Institute of Technology
-        - Graduate Student at Carnegie Mellon University
+        - CMU - Intro to Deep Learning, Machine Learning for Signal Processing
+    - title: Neuroscience
+      items:
+        - MIT - Functional Magnetic Resonance Imaging: Data Acquisition and Analysis
+        - CMU - Neuroengineering Laboratory, Advanced System Neuroscience
+        - UCSD - Cognitive Neuroscience
+    - title: Electrical Engineering
+      items:
+        - UCSD - Linear Electronic Systems, Introduction to Digital Design, Components and Circuits Laboratory
+    - title: MEMS
+      items:
+        - CMU - Micro and Nano Systems Fabrication, Nano-Bio-Photonics
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Verilog, C/C++, Matlab, Python, R, Mathematica
+    - title: Circuit/System Software
+      items:
+        - Altium, Simulink
+    - title: Mathematical Packages
+      items:
+        - Matlab, Mathematica
+    - title: CAD Software
+      items:
+        - SolidWorks, Autodesk, Blender
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Neuroscience and Medical Imaging
+    - title: Brain Physiology and Neuromodulation
       items:
-        - Computational neuroscience
-        - Medical image analysis
-        - Brain-computer interfaces
-        - Neuroimaging techniques
+        - Computational modeling of brain physiology
+        - Functional neuromodulation systems
         - Cerebrospinal fluid dynamics
+        - Sleep and brain aging
+        - Neuroimaging and neural signal processing
     - title: Machine Learning and AI
       items:
         - Deep learning and neural networks
@@ -127,8 +160,3 @@
         - Bayesian ensemble methods
         - Signal processing algorithms
         - Adaptive filtering
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Reading, coding, research

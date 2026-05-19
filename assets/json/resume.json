@@ -1,14 +1,14 @@
 {
   "basics": {
     "name": "Xiangjian Zeng",
-    "label": "Graduate Student",
+    "label": "Ph.D. Student, Electrical Engineering and Computer Science",
     "image": "",
     "email": "azeng@mit.edu",
     "phone": "(412) 579-1999",
     "url": "https://aaronzeng-cmu.github.io/",
-    "summary": "Graduate student at Massachusetts Institute of Technology researching cognitive basis of the brain with computational modeling and creating functional neuromodulation systems with engineering toolsets",
+    "summary": "To research brain physiology with computational modeling and create a functional neuromodulation system with engineering toolsets.",
     "location": {
-      "address": "",
+      "address": "50 Vassar St, Building 36",
       "postalCode": "02139",
       "city": "Cambridge",
       "countryCode": "US",
@@ -34,8 +34,11 @@
       "url": "https://lewislab.mit.edu/",
       "startDate": "2024-09-01",
       "endDate": "",
-      "summary": "Design algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep to enhance waste clearance",
-      "highlights": ["Closed-loop Auditory Modulation", "Cerebrospinal Fluid Dynamics", "Sleep Enhancement"]
+      "summary": "Closed-loop Auditory Modulation of Cerebrospinal Fluid during Sleep",
+      "highlights": [
+        "Design machine-learning-based algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep",
+        "Explore new potential interventions for brain aging; present results at conference as first author"
+      ]
     },
     {
       "name": "Insanally Lab, University of Pittsburgh",
@@ -43,8 +46,11 @@
       "url": "https://www.insanallylab.com/",
       "startDate": "2023-05-01",
       "endDate": "2024-08-01",
-      "summary": "Developed ensemble decoder in Python incorporating information from multiple neurons to predict mouse behavior in auditory discrimination tasks",
-      "highlights": ["Bayesian Ensemble Neural Decoding", "Spiking RNN Simulation", "First Author Conference Presentations"]
+      "summary": "Bayesian ensemble neural decoding and spiking RNN simulation of auditory discrimination in mice",
+      "highlights": [
+        "Developed ensemble decoder in Python incorporating multiple neurons to predict mouse behavior; manuscript in review",
+        "Designed spiking RNN in Python and Julia following biological constraints; first-authored paper in preparation"
+      ]
     },
     {
       "name": "Chamanzar Lab, Carnegie Mellon University",
@@ -52,8 +58,11 @@
       "url": "https://www.chamanzarlab.com/",
       "startDate": "2022-05-01",
       "endDate": "2023-04-01",
-      "summary": "Created neural optical probe characterization system based on light scattering, incorporating robotics, computer vision, and signal processing",
-      "highlights": ["Neural Probe Characterization", "Robotics Integration", "First Author Publication"]
+      "summary": "Neural Probe Waveguide Characterization System",
+      "highlights": [
+        "Created neural optical probe characterization system based on light scattering with robotics, computer vision, and signal processing",
+        "First author publication on characterization performance previously only obtainable by destructive methods"
+      ]
     },
     {
       "name": "Lerman Lab, UC San Diego",
@@ -61,20 +70,62 @@
       "url": "https://lermanlab.ucsd.edu/",
       "startDate": "2020-03-01",
       "endDate": "2021-01-01",
-      "summary": "Led research and implementation of adaptive filtering algorithm to eliminate powerline noise contaminating peripheral nerve recordings",
-      "highlights": ["Adaptive Neural Signal Processing", "45dB Noise Reduction", "First Author Conference Paper"]
+      "summary": "Adaptive neural signal processing and peripheral nerve magnetoneurography",
+      "highlights": [
+        "Led adaptive filtering for powerline noise cancellation; 45dB reduction in 60Hz band; first author conference paper",
+        "Matlab signal processing for magnetic nervous system recordings; human trial test subject"
+      ]
+    },
+    {
+      "name": "Spitzer Lab, UC San Diego",
+      "position": "Research Assistant",
+      "startDate": "2019-10-01",
+      "endDate": "2020-12-01",
+      "summary": "Automated Fluorescence Cell Counting",
+      "highlights": [
+        "Automatic cell recognition for fluorescence brain slices in Matlab with accuracy close to expert manual selection"
+      ]
+    },
+    {
+      "name": "Neuroelectronics Group, La Jolla, San Diego",
+      "position": "Research Assistant",
+      "startDate": "2019-07-01",
+      "endDate": "2019-08-01",
+      "summary": "Neural Recording Amplifier PCB Design",
+      "highlights": [
+        "PCB design and soldering with Altium; board 3cm×1cm, more than two times smaller than previous design"
+      ]
     }
   ],
   "volunteer": [
     {
       "organization": "Society for Neuroscience",
+      "location": "San Diego, CA",
+      "position": "Conference Presenter (First Author)",
+      "url": "https://www.sfn.org/",
+      "startDate": "2025-11-15",
+      "endDate": "2025-11-19",
+      "summary": "Auditory Stimulation During Sleep Modulates CSF Flow via Dual Slow-Wave and High Frequency Pathways",
+      "highlights": []
+    },
+    {
+      "organization": "Society for Neuroscience",
       "location": "Chicago, IL",
-      "position": "Conference Presenter",
+      "position": "Conference Presenter (First Author)",
       "url": "https://www.sfn.org/",
       "startDate": "2024-10-05",
       "endDate": "2024-10-09",
-      "summary": "Presented poster on contributions and synaptic basis of diverse cortical neuron response to flexible task performance",
-      "highlights": ["First Author Poster Presentation", "Neuroscience Research"]
+      "summary": "Contributions and synaptic basis of diverse cortical neuron response to flexible task performance",
+      "highlights": []
+    },
+    {
+      "organization": "COSYNE",
+      "location": "Montreal, Canada",
+      "position": "Conference Presenter (First Author)",
+      "startDate": "2024-03-27",
+      "endDate": "2024-03-30",
+      "summary": "Contributions and synaptic basis of diverse cortical neuron response to flexible task performance",
+      "highlights": []
     }
   ],
   "education": [
@@ -84,10 +135,10 @@
       "url": "https://www.mit.edu/",
       "area": "Electrical Engineering and Computer Science",
       "studyType": "PhD",
-      "startDate": "2023-12-01",
-      "endDate": "2030-06-01",
+      "startDate": "2024-09-01",
+      "endDate": "",
       "score": "5.00/5.00",
-      "courses": ["Functional Magnetic Resonance Imaging", "Data Acquisition and Analysis"]
+      "courses": ["Functional Magnetic Resonance Imaging: Data Acquisition and Analysis"]
     },
     {
       "institution": "Carnegie Mellon University",
@@ -96,29 +147,47 @@
       "area": "Electrical and Computer Engineering",
       "studyType": "Master",
       "startDate": "2021-09-01",
-      "endDate": "2023-05-01",
+      "endDate": "2023-12-01",
       "score": "4.00/4.00",
-      "courses": ["Intro to Deep Learning", "Machine Learning for Signal Processing", "Neuroengineering Laboratory", "Advanced System Neuroscience"]
+      "courses": [
+        "Intro to Deep Learning",
+        "Machine Learning for Signal Processing",
+        "Neuroengineering Laboratory",
+        "Advanced System Neuroscience",
+        "Micro and Nano Systems Fabrication",
+        "Nano-Bio-Photonics"
+      ]
     },
     {
       "institution": "University of California San Diego",
       "location": "La Jolla, CA",
       "url": "https://www.ucsd.edu/",
-      "area": "Electrical and Computer Engineering",
+      "area": "Electrical and Computer Engineering (Minor in Cognitive Science)",
       "studyType": "Bachelor",
       "startDate": "2016-09-01",
-      "endDate": "2020-06-01",
+      "endDate": "2020-12-01",
       "score": "3.91/4.00",
-      "courses": ["Cognitive Science Minor", "Linear Electronic Systems", "Introduction to Digital Design", "Components and Circuits Laboratory", "Cognitive Neuroscience"]
+      "courses": [
+        "Cognitive Neuroscience",
+        "Linear Electronic Systems",
+        "Introduction to Digital Design",
+        "Components and Circuits Laboratory"
+      ]
     }
   ],
   "awards": [
     {
+      "title": "MIT Artificial Intelligence and Wellness Fellowship",
+      "date": "2025-01-01",
+      "awarder": "Massachusetts Institute of Technology",
+      "summary": ""
+    },
+    {
       "title": "Magna Cum Laude",
-      "date": "2020-06-01",
+      "date": "2020-12-01",
       "awarder": "University of California San Diego",
       "url": "https://www.ucsd.edu/",
-      "summary": "Graduated with highest honors from UC San Diego with a Bachelor's degree in Electrical and Computer Engineering"
+      "summary": "Bachelor's degree in Electrical and Computer Engineering"
     }
   ],
   "certificates": [
@@ -126,73 +195,75 @@
       "name": "Intro to Deep Learning",
       "date": "2022-01-01",
       "issuer": "Carnegie Mellon University",
-      "url": "https://www.cmu.edu/",
       "icon": "fa-solid fa-brain"
     },
     {
       "name": "Machine Learning for Signal Processing",
       "date": "2022-01-01",
       "issuer": "Carnegie Mellon University",
-      "url": "https://www.cmu.edu/",
       "icon": "fa-solid fa-signal"
     },
     {
       "name": "Neuroengineering Laboratory",
       "date": "2022-01-01",
       "issuer": "Carnegie Mellon University",
-      "url": "https://www.cmu.edu/",
       "icon": "fa-solid fa-microscope"
     },
     {
       "name": "Advanced System Neuroscience",
       "date": "2022-01-01",
       "issuer": "Carnegie Mellon University",
-      "url": "https://www.cmu.edu/",
       "icon": "fa-solid fa-network-wired"
     },
     {
-      "name": "Functional Magnetic Resonance Imaging",
+      "name": "Functional Magnetic Resonance Imaging: Data Acquisition and Analysis",
       "date": "2024-01-01",
       "issuer": "Massachusetts Institute of Technology",
-      "url": "https://www.mit.edu/",
       "icon": "fa-solid fa-magnet"
     },
     {
       "name": "Cognitive Neuroscience",
       "date": "2020-01-01",
       "issuer": "University of California San Diego",
-      "url": "https://www.ucsd.edu/",
       "icon": "fa-solid fa-head-side-brain"
     }
   ],
   "publications": [
     {
-      "name": "Automated Photonic Waveguide Loss Measurement using Out-scattering Light Method",
-      "publisher": "Integrated Systems Design and Technology Conference 2023",
-      "releaseDate": "2023-01-01",
-      "url": "",
-      "summary": "First author publication on automated photonic waveguide characterization system based on light scattering method"
+      "name": "Auditory Stimulation During Sleep Modulates CSF Flow via Dual Slow-Wave and High Frequency Pathways",
+      "publisher": "Society for Neuroscience, San Diego, USA",
+      "releaseDate": "2025-11-15",
+      "summary": "First author conference presentation"
     },
     {
       "name": "Dynamic gating of perceptual flexibility by non-classically responsive neurons",
-      "publisher": "Manuscript in Review",
+      "publisher": "Manuscript in review",
       "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "Co-authored manuscript revealing the significance of non-classically-response neurons in task learning through Bayesian ensemble neural decoding"
+      "summary": "Co-authored paper on Bayesian ensemble neural decoding"
+    },
+    {
+      "name": "Automated Photonic Waveguide Loss Measurement using Out-scattering Light Method",
+      "publisher": "Integrated Systems Design and Technology Conference 2023",
+      "releaseDate": "2023-01-01",
+      "summary": "First author paper publication"
     },
     {
       "name": "Contributions and synaptic basis of diverse cortical neuron response to flexible task performance",
-      "publisher": "Society for Neuroscience",
+      "publisher": "Society for Neuroscience / COSYNE",
       "releaseDate": "2024-10-05",
-      "url": "https://www.sfn.org/meetings/neuroscience-2024",
-      "summary": "First author poster presentation on cortical neuron responses to flexible task performance"
+      "summary": "First author conference presentations"
     },
     {
       "name": "RLS Harmonic Powerline Noise Cancellation in Radial Nerve Recording",
-      "publisher": "North American Neuromodulation Society",
+      "publisher": "North American Neuromodulation Society Virtual Meeting",
       "releaseDate": "2021-01-15",
-      "url": "https://conference.neuromodulation.org/",
-      "summary": "First author conference paper on adaptive filtering algorithm for noise cancellation in peripheral nerve recordings"
+      "summary": "First author conference publication"
+    },
+    {
+      "name": "Capturing the Magnetic Signature of Small Fiber Neuronal Activity",
+      "publisher": "North American Neuromodulation Society Virtual Meeting",
+      "releaseDate": "2021-01-15",
+      "summary": "Co-authored conference publication"
     }
   ],
   "skills": [
@@ -200,155 +271,103 @@
       "name": "Programming Languages",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "Matlab",
-        "C/C++",
-        "Verilog",
-        "R",
-        "Mathematica",
-        "Julia"
-      ]
+      "keywords": ["Verilog", "C/C++", "Matlab", "Python", "R", "Mathematica"]
     },
     {
-      "name": "Neuroscience",
+      "name": "Circuit/System Software",
+      "level": "Advanced",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["Altium", "Simulink"]
+    },
+    {
+      "name": "CAD Software",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cube",
+      "keywords": ["SolidWorks", "Autodesk", "Blender"]
+    },
+    {
+      "name": "Neuroscience & Machine Learning",
       "level": "Expert",
       "icon": "fa-solid fa-brain",
       "keywords": [
         "Computational Neuroscience",
-        "Medical Image Analysis",
-        "Brain-Computer Interfaces",
-        "Neuroimaging Techniques",
-        "Cerebrospinal Fluid Dynamics",
-        "Neural Signal Processing"
-      ]
-    },
-    {
-      "name": "Machine Learning",
-      "level": "Expert",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Deep Learning",
-        "Neural Networks",
         "Spiking Neural Networks",
         "Bayesian Methods",
-        "Signal Processing",
-        "Adaptive Filtering"
-      ]
-    },
-    {
-      "name": "Hardware Design",
-      "level": "Advanced",
-      "icon": "fa-solid fa-microchip",
-      "keywords": [
-        "PCB Design",
-        "Altium",
-        "Circuit Design",
-        "Robotics",
-        "Computer Vision",
-        "Embedded Systems"
+        "Neural Signal Processing",
+        "Cerebrospinal Fluid Dynamics",
+        "Deep Learning"
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     },
     {
       "language": "Chinese",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native speaker"
     }
   ],
   "interests": [
     {
-      "name": "Neuroscience Research",
+      "name": "Brain Physiology and Neuromodulation",
       "icon": "fa-solid fa-brain",
       "keywords": [
-        "Computational Neuroscience",
-        "Medical Imaging",
-        "Brain-Computer Interfaces",
-        "Neural Signal Processing",
-        "Sleep Research",
-        "Cerebrospinal Fluid Dynamics"
-      ]
-    },
-    {
-      "name": "Machine Learning",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Deep Learning",
-        "Neural Networks",
-        "Bayesian Methods",
-        "Signal Processing",
-        "Computer Vision",
-        "Adaptive Filtering"
-      ]
-    },
-    {
-      "name": "Academic Activities",
-      "icon": "fa-solid fa-graduation-cap",
-      "keywords": [
-        "Research Publications",
-        "Conference Presentations",
-        "Academic Collaboration",
-        "Teaching Assistant",
-        "Mentoring Students",
-        "Scientific Writing"
+        "Computational modeling",
+        "Functional neuromodulation",
+        "Sleep research",
+        "Cerebrospinal fluid dynamics"
       ]
     }
   ],
   "references": [
     {
       "name": "Professor Laura D. Lewis",
-      "icon": "fa-solid fa-user",
       "reference": "Electrical Engineering and Computer Science, Massachusetts Institute of Technology. Email: ldlewis@mit.edu"
     },
     {
       "name": "Professor Michele Insanally",
-      "icon": "fa-solid fa-user",
       "reference": "Otolaryngology & Neurobiology, University of Pittsburgh. Phone: 412-648-4620, Email: mni@pitt.edu"
     },
     {
       "name": "Professor Badr F. Albanna",
-      "icon": "fa-solid fa-user",
       "reference": "Neuroscience, University of Pittsburgh School of Medicine. Email: badr.albanna@gmail.com"
     }
   ],
   "projects": [
     {
       "name": "Closed-loop Auditory Modulation of Cerebrospinal Fluid during Sleep",
-      "summary": "Design algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep to enhance waste clearance",
-      "highlights": ["Auditory Stimulation", "Sleep Enhancement", "Waste Clearance"],
+      "summary": "Machine-learning-based auditory stimulation to promote CSF circulation during sleep",
       "startDate": "2024-09-01",
-      "endDate": "2030-06-01",
+      "endDate": "",
       "url": "https://lewislab.mit.edu/"
     },
     {
+      "name": "Deep Learning Automatic Fake News Detection",
+      "summary": "BERT-based language model for evidence extraction and misinformation classification (72% two-way accuracy)",
+      "startDate": "2022-09-01",
+      "endDate": "2022-12-01"
+    },
+    {
+      "name": "EEG-based Music Recommendation",
+      "summary": "KNN system to detect musical preferences from EEG and update recommendations in real-time",
+      "startDate": "2022-09-01",
+      "endDate": "2022-12-01"
+    },
+    {
       "name": "Bayesian Ensemble Neural Decoding",
-      "summary": "Developed ensemble decoder in Python incorporating information from multiple neurons to predict mouse behavior in auditory discrimination tasks",
-      "highlights": ["Python Development", "Neural Decoding", "Mouse Behavior Analysis"],
+      "summary": "Ensemble decoder incorporating multiple neurons to predict mouse auditory discrimination behavior",
       "startDate": "2023-05-01",
       "endDate": "2024-08-01",
       "url": "https://www.insanallylab.com/"
     },
     {
       "name": "Neural Probe Waveguide Characterization System",
-      "summary": "Created neural optical probe characterization system based on light scattering, incorporating robotics, computer vision, and signal processing",
-      "highlights": ["Robotics Integration", "Computer Vision", "Signal Processing"],
+      "summary": "Light-scattering characterization with robotics, computer vision, and signal processing",
       "startDate": "2022-05-01",
       "endDate": "2023-04-01",
       "url": "https://www.chamanzarlab.com/"
-    },
-    {
-      "name": "Adaptive Neural Signal Noise Cancellation",
-      "summary": "Led research and implementation of adaptive filtering algorithm to eliminate powerline noise contaminating peripheral nerve recordings",
-      "highlights": ["Adaptive Filtering", "Noise Cancellation", "45dB Reduction"],
-      "startDate": "2020-03-01",
-      "endDate": "2021-01-01",
-      "url": "https://lermanlab.ucsd.edu/"
     }
   ]
 }

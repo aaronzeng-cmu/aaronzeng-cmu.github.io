@@ -9,7 +9,7 @@ last_name: Zeng
 contact_note: >
   Feel free to reach out via email or LinkedIn for research collaborations and academic discussions.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Graduate student at Massachusetts Institute of Technology. Research interests in neuroscience, medical imaging, and artificial intelligence.
+  Ph.D. student at MIT EECS. Researching brain physiology with computational modeling and functional neuromodulation systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
