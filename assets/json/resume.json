@@ -6,7 +6,7 @@
     "email": "azeng@mit.edu",
     "phone": "(412) 579-1999",
     "url": "https://aaronzeng-cmu.github.io/",
-    "summary": "To research brain physiology with computational modeling and create a functional neuromodulation system with engineering toolsets.",
+    "summary": "Ph.D. student developing closed-loop auditory stimulation to enhance cerebrospinal fluid flow during sleep. Co-author of a 2026 Science Translational Medicine paper on this work.",
     "location": {
       "address": "50 Vassar St, Building 36",
       "postalCode": "02139",
@@ -34,10 +34,13 @@
       "url": "https://lewislab.mit.edu/",
       "startDate": "2024-09-01",
       "endDate": "",
-      "summary": "Closed-loop Auditory Modulation of Cerebrospinal Fluid during Sleep",
+      "summary": "Closed-loop auditory modulation of cerebrospinal fluid during sleep, and automatic sleep staging for simultaneous EEG-fMRI",
       "highlights": [
-        "Design machine-learning-based algorithms to use auditory stimulation to promote cerebrospinal fluid circulation during sleep",
-        "Explore new potential interventions for brain aging; present results at conference as first author"
+        "Develop real-time EEG processing and machine-learning-based slow-oscillation phase-prediction algorithms for precisely timed closed-loop auditory stimulation during sleep",
+        "Integrate simultaneous EEG-fMRI with electrophysiological and CSF-flow measurements to quantify stimulation-evoked neural and physiological dynamics across younger and older adults",
+        "Co-authored a Science Translational Medicine paper showing that closed-loop auditory stimulation in phase with sleep slow waves enhances cerebrospinal fluid flow in humans",
+        "Benchmark automatic sleep-staging models on manually staged simultaneous EEG-fMRI and characterize systematic failures under scanner-domain shift",
+        "Investigate contributions from temporal and context priors, sensor and reference mismatch, and scanner-related signal differences"
       ]
     },
     {
@@ -46,10 +49,12 @@
       "url": "https://www.insanallylab.com/",
       "startDate": "2023-05-01",
       "endDate": "2024-08-01",
-      "summary": "Bayesian ensemble neural decoding and spiking RNN simulation of auditory discrimination in mice",
+      "summary": "Bayesian ensemble neural decoding and biologically constrained spiking recurrent neural networks",
       "highlights": [
-        "Developed ensemble decoder in Python incorporating multiple neurons to predict mouse behavior; manuscript in review",
-        "Designed spiking RNN in Python and Julia following biological constraints; first-authored paper in preparation"
+        "Developed a probabilistic ensemble neural decoder combining inter-spike-interval conditional probabilities across neurons to predict behavioral trial conditions",
+        "Showed that non-classically responsive neurons interact with responsive neurons during learning, and that aggregating their population activity raised behavioral decoding accuracy from 60% to 65% in late-stage learning",
+        "Built 1,000-unit spiking recurrent neural-network models in Python and Julia under biological constraints to simulate cortical dynamics underlying auditory discrimination",
+        "Investigated how flexible network dynamics emerge from balanced excitatory and inhibitory activity"
       ]
     },
     {
@@ -60,8 +65,8 @@
       "endDate": "2023-04-01",
       "summary": "Neural Probe Waveguide Characterization System",
       "highlights": [
-        "Created neural optical probe characterization system based on light scattering with robotics, computer vision, and signal processing",
-        "First author publication on characterization performance previously only obtainable by destructive methods"
+        "Developed an automated neural-probe waveguide characterization pipeline integrating computer vision, robotics, and signal processing",
+        "Enabled non-destructive loss measurement previously achievable primarily through destructive methods, and first-authored a peer-reviewed conference proceedings paper"
       ]
     },
     {
@@ -72,7 +77,7 @@
       "endDate": "2021-01-01",
       "summary": "Adaptive neural signal processing and peripheral nerve magnetoneurography",
       "highlights": [
-        "Led adaptive filtering for powerline noise cancellation; 45dB reduction in 60Hz band; first author conference paper",
+        "Developed and hardware-validated an adaptive filtering algorithm for peripheral nerve recordings, achieving approximately 45 dB suppression of 60 Hz interference; first author at the North American Neuromodulation Society meeting",
         "Matlab signal processing for magnetic nervous system recordings; human trial test subject"
       ]
     },
@@ -136,7 +141,7 @@
       "area": "Electrical Engineering and Computer Science",
       "studyType": "PhD",
       "startDate": "2024-09-01",
-      "endDate": "",
+      "endDate": "2029-06-01",
       "score": "5.00/5.00",
       "courses": ["Functional Magnetic Resonance Imaging: Data Acquisition and Analysis"]
     },
@@ -176,6 +181,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "MIT EECS MathWorks Fellowship",
+      "date": "2026-01-01",
+      "awarder": "Massachusetts Institute of Technology",
+      "summary": "Electrical Engineering and Computer Science"
+    },
     {
       "title": "MIT Artificial Intelligence and Wellness Fellowship",
       "date": "2025-01-01",
@@ -230,6 +241,13 @@
   ],
   "publications": [
     {
+      "name": "Closed-loop auditory stimulation in phase with slow waves during sleep enhances cerebrospinal fluid flow in humans",
+      "publisher": "Science Translational Medicine",
+      "releaseDate": "2026-09-09",
+      "url": "https://doi.org/10.1126/scitranslmed.aea5469",
+      "summary": "Co-author. Closed-loop auditory stimulation aligned with sleep slow waves enhances cerebrospinal fluid flow in humans."
+    },
+    {
       "name": "Auditory Stimulation During Sleep Modulates CSF Flow via Dual Slow-Wave and High Frequency Pathways",
       "publisher": "Society for Neuroscience, San Diego, USA",
       "releaseDate": "2025-11-15",
@@ -271,7 +289,7 @@
       "name": "Programming Languages",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": ["Verilog", "C/C++", "Matlab", "Python", "R", "Mathematica"]
+      "keywords": ["Python", "C/C++", "MATLAB", "Julia", "R", "Verilog", "Mathematica"]
     },
     {
       "name": "Circuit/System Software",
@@ -290,12 +308,15 @@
       "level": "Expert",
       "icon": "fa-solid fa-brain",
       "keywords": [
-        "Computational Neuroscience",
-        "Spiking Neural Networks",
-        "Bayesian Methods",
-        "Neural Signal Processing",
-        "Cerebrospinal Fluid Dynamics",
-        "Deep Learning"
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "EEG",
+        "EEG-fMRI",
+        "Neural decoding",
+        "Spiking neural networks",
+        "Closed-loop stimulation",
+        "Real-time signal processing"
       ]
     }
   ],
@@ -338,14 +359,20 @@
   "projects": [
     {
       "name": "Closed-loop Auditory Modulation of Cerebrospinal Fluid during Sleep",
-      "summary": "Machine-learning-based auditory stimulation to promote CSF circulation during sleep",
+      "summary": "Real-time EEG phase prediction for closed-loop auditory stimulation of cerebrospinal fluid flow during sleep",
       "startDate": "2024-09-01",
       "endDate": "",
-      "url": "https://lewislab.mit.edu/"
+      "url": "https://doi.org/10.1126/scitranslmed.aea5469"
+    },
+    {
+      "name": "Robust Automatic Sleep Staging for Simultaneous EEG-fMRI",
+      "summary": "Benchmark sleep-staging models on simultaneous EEG-fMRI and characterize failures under scanner-domain shift",
+      "startDate": "2024-09-01",
+      "endDate": ""
     },
     {
       "name": "Deep Learning Automatic Fake News Detection",
-      "summary": "BERT-based language model for evidence extraction and misinformation classification (72% two-way accuracy)",
+      "summary": "BERT-based language model to retrieve evidence and classify misinformation in political statements, with 72% binary accuracy",
       "startDate": "2022-09-01",
       "endDate": "2022-12-01"
     },
