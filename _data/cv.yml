@@ -41,67 +41,60 @@
       institution: Lewis Lab, Massachusetts Institute of Technology, Cambridge, MA
       year: 09/2024 - Present
       description:
-        - Develop real-time EEG processing and machine-learning-based slow-oscillation phase-prediction algorithms for precisely timed closed-loop auditory stimulation during sleep
-        - Integrate simultaneous EEG-fMRI with electrophysiological and CSF-flow measurements to quantify stimulation-evoked neural and physiological dynamics across younger and older adults
-        - Co-authored a Science Translational Medicine paper showing that closed-loop auditory stimulation in phase with sleep slow waves enhances cerebrospinal fluid flow in humans
+        - Develop a closed-loop neuromodulation system that performs real-time scalp-EEG filtering and machine-learning-based slow-oscillation phase prediction to deliver precisely timed auditory stimulation during sleep
+        - Integrate simultaneous EEG-fMRI with electrophysiological and CSF-flow analyses to quantify stimulation-evoked brain and fluid dynamics across younger and older adults
+        - Co-authored a Science Translational Medicine study showing that closed-loop auditory stimulation targeting sleep slow waves modulates cerebrospinal fluid flow in humans
       linkitems:
         - link: https://doi.org/10.1126/scitranslmed.aea5469
           linkname: Science Translational Medicine
-    - title: Robust Automatic Sleep Staging for Simultaneous EEG-fMRI
-      institution: Lewis Lab, Massachusetts Institute of Technology, Cambridge, MA
-      year: 09/2024 - Present
-      description:
-        - Benchmark automatic sleep-staging models on manually staged simultaneous EEG-fMRI and characterize systematic failures under scanner-domain shift
-        - Investigate contributions from temporal and context priors, sensor and reference mismatch, and scanner-related signal differences
     - title: Bayesian Ensemble Neural Decoding
       institution: Insanally Lab, University of Pittsburgh, Pittsburgh, PA
       year: 05/2023 - 08/2024
       description:
-        - Developed a probabilistic ensemble neural decoder that combines inter-spike-interval conditional probabilities across neurons to predict behavioral trial conditions
-        - Showed that non-classically responsive neurons interact with responsive neurons during learning, and that aggregating their population activity raised behavioral decoding accuracy from 60% to 65% in late-stage learning
-    - title: Biologically Constrained Spiking Recurrent Neural Networks
+        - Developed a probabilistic ensemble neural decoder, combining inter-spike-interval-based conditional probabilities across multiple neurons to jointly predict behavioral trial conditions
+        - Revealed that traditionally neglected non-classically responsive neurons interact with responsive neurons in learning, and that aggregating their population activity improved behavioral decoding accuracy from 60% to 65% during late-stage learning
+    - title: Spiking Recurrent Neural Network Simulation of the Brain
       institution: Insanally Lab, University of Pittsburgh, Pittsburgh, PA
       year: 05/2023 - 08/2024
       description:
-        - Built 1,000-unit spiking recurrent neural-network models in Python and Julia under biological constraints to simulate cortical dynamics underlying auditory discrimination
-        - Investigated how flexible network dynamics emerge from balanced excitatory and inhibitory activity
+        - Built spiking recurrent neural-network models with 1000 units in Python and Julia under biological constraints to simulate cortical mechanisms underlying auditory discrimination behavior
+        - Investigated how flexible neural-network dynamics emerge from balanced excitatory and inhibitory activity and authored a manuscript describing the resulting computational model
     - title: Neural Probe Waveguide Characterization System
       institution: Chamanzar Lab, Carnegie Mellon University, Pittsburgh, PA
       year: 05/2022 - 04/2023
       description:
-        - Developed an automated neural-probe waveguide characterization pipeline integrating computer vision, robotics, and signal processing
-        - Enabled non-destructive loss measurement previously achievable primarily through destructive methods, and first-authored a peer-reviewed conference proceedings paper
+        - Developed an automated, non-destructive characterization system for photonic waveguides used in neural optical probes by integrating robotics, computer vision, and signal processing
+        - Demonstrated waveguide-loss characterization previously achievable primarily through destructive methods and first-authored a peer-reviewed conference proceedings paper describing the pipeline
     - title: Adaptive Neural Signal Noise Cancellation
       institution: Lerman Lab, UC San Diego, La Jolla, CA
       year: 03/2020 - 01/2021
       description:
-        - Developed and hardware-validated an adaptive filtering algorithm for peripheral nerve recordings, achieving approximately 45 dB suppression of 60 Hz interference
-        - Presented the work as first author at the North American Neuromodulation Society meeting
+        - Led development of an adaptive filtering algorithm for suppressing power-line interference in peripheral nerve recordings and implemented the method in a hardware demonstration
+        - Achieved approximately 45 dB suppression of 60 Hz interference and presented the work as first author at the North American Neuromodulation Society meeting
     - title: Peripheral Nerve Magnetoneurography
       institution: Lerman Lab, UC San Diego, La Jolla, CA
       year: 03/2020 - 01/2021
       description:
-        - Created signal cleaning and processing scripts in Matlab for experiment data on magnetic nervous system recordings by tailoring functions to individual signal, contributing to publication of another paper
-        - Ran test subject for human trials in neuroscience studies involving electric stimulation
+        - Developed MATLAB signal-cleaning and processing pipelines for magnetic measurements of peripheral nerve activity, contributing analyses to a collaborative publication
+        - Supported human neuroscience studies involving peripheral nerve measurements and electrical stimulation
     - title: Automated Fluorescence Cell Counting
       institution: Spitzer Lab, UC San Diego, La Jolla, CA
       year: 10/2019 - 12/2020
       description:
-        - Developed an automatic cell recognition program for fluorescence brain slices in Matlab utilizing correlation to count and map a variety of brain cells
-        - Obtained an accuracy that's close to expert's manual selection
+        - Developed an automatic cell recognition program for fluorescence brain slices in Matlab utilizing correlation to count and map a variety of brain cells, obtaining an accuracy close to expert manual selection
     - title: Neural Recording Amplifier PCB Design
       institution: Neuroelectronics Group, La Jolla, San Diego, CA
       year: 07/2019 - 08/2019
       description:
-        - Created and soldered a PCB design using Altium for an amplifier chip to be used in in vivo cell recording
-        - Produced a miniature board with size 3cm×1cm and more than two times smaller than previous design
+        - Designed, assembled, and tested an Altium PCB for an amplifier used in in vivo neural recording
+        - Reduced the redesigned amplifier-board footprint to approximately 3 cm x 1 cm, more than twofold smaller than the previous design
 
 - title: Fellowship Awards
   type: time_table
   contents:
     - year: 2026
       items:
-        - MIT EECS MathWorks Fellowship
+        - EECS MathWorks Fellowship
     - year: 2025
       items:
         - MIT Artificial Intelligence and Wellness Fellowship
@@ -115,7 +108,7 @@
     - title: Deep Learning Automatic Fake News Detection
       year: Fall 2022
       description:
-        - Developed a BERT-based language model to retrieve relevant evidence and classify misinformation in political statements, achieving 72% binary classification accuracy
+        - Jointly created a BERT-based language model to automatically extract relevant evidence and classify misinformation from political statements, achieving a two-way accuracy of 72%
     - title: EEG-based Music Recommendation
       year: Fall 2022
       description:
@@ -142,22 +135,19 @@
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Programming Languages
+    - title: Programming and Machine Learning
       items:
-        - Python, C/C++, MATLAB, Julia, R, Verilog, Mathematica
-    - title: Circuit/System Software
-      items:
-        - Altium, Simulink
-    - title: Machine Learning
-      items:
+        - Python, C/C++, MATLAB, Julia, R
         - PyTorch, TensorFlow, scikit-learn
-        - Neural decoding, deep learning, spiking neural networks
-    - title: Neural Data
+    - title: Neural Data and Modeling
       items:
-        - EEG, EEG-fMRI, electrophysiology, adaptive filtering, real-time signal processing
-    - title: CAD Software
+        - EEG, EEG-fMRI, electrophysiology, neural decoding, adaptive filtering, computational modeling
+    - title: Neurotechnology
       items:
-        - SolidWorks, Autodesk, Blender
+        - Closed-loop stimulation, peripheral nerve recording, real-time signal processing
+    - title: Hardware and Prototyping
+      items:
+        - PCB design, Altium, microfabrication, Simulink, SolidWorks
 
 - title: Academic Interests
   type: nested_list

@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Xiangjian (Aaron)
-middle_name: 
+middle_name:
 last_name: Zeng
 contact_note: >
   Feel free to reach out via email or LinkedIn for research collaborations and academic discussions.
@@ -198,6 +198,7 @@ exclude:
   - _pages/profiles.md
   - _pages/books.md
   - _pages/dropdown.md
+  - _pages/repositories.md
   - _posts/
   - _projects/
   - _bibliography/
