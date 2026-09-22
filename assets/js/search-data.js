@@ -30,7 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "projects-how-to-make-almost-anything",
+          title: 'How to Make (Almost) Anything',
+          description: "I am taking HTMAA and will be highlighting my fabrication projects here.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/htmaa/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
