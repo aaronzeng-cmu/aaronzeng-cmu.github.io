@@ -185,7 +185,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _news/
   - _pages/blog.md
   - _pages/teaching.md
   - _pages/profiles.md
@@ -297,8 +296,13 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
-  group_order: descending
+  group_by: type, year
+  group_order: ascending, descending
+  type_order: [article, talk, inproceedings]
+  type_names:
+    article: papers
+    talk: talks
+    inproceedings: conferences
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
@@ -328,6 +332,7 @@ filtered_bibtex_keywords:
     pdf,
     poster,
     preview,
+    preview_alt,
     selected,
     slides,
     supp,
