@@ -283,6 +283,8 @@ footer.sticky-bottom {
       object-fit: cover;
       object-position: 50% 35%;
       border-radius: 2px;
+      // Soften the studio lighting a touch so the photo sits quietly on the page.
+      filter: contrast(0.88);
     }
   }
 
