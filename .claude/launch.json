@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "design-samples",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4010", "--bind", "127.0.0.1", "--directory", "_design-samples"],
+      "port": 4010
+    },
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "set PATH=C:\\Ruby33-x64\\bin;%PATH% && bundle exec jekyll serve --port 4000 --host 127.0.0.1 --config _config.yml,C:/Users/Aaron/AppData/Local/Temp/claude/c3b87d73d8b740dd/deb18c05-ee09-4b3a-b42a-3a4556a03b06/scratchpad/_config.local.yml"
+      ],
+      "port": 4000
+    }
+  ]
+}

@@ -46,14 +46,14 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -296,8 +296,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: type, year
-  group_order: ascending, descending
+  group_by: type
+  group_order: ascending
   type_order: [article, talk, inproceedings]
   type_names:
     article: papers
@@ -333,6 +333,8 @@ filtered_bibtex_keywords:
     poster,
     preview,
     preview_alt,
+    press,
+    press_name,
     selected,
     slides,
     supp,
@@ -458,7 +460,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

@@ -1,80 +1,144 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+{% comment %}
+  Scholar homepage: intro + portrait, then labelled sections (research interests,
+  news + education, selected publications). Content comes from the front matter
+  of _pages/about.md; the page body is the bio.
+{% endcomment %}
+<div class="post scholar-home">
+  <section class="home-hero">
+    <div class="home-intro">
+      {% if page.subtitle %}
+        <p class="home-kicker">{{ page.subtitle }}</p>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+      <h1 class="home-name">
+        {%- if site.title == 'blank' -%}
+          {%- assign name_parts = site.first_name | split: ' (' -%}
+          {{ name_parts[0] }}
+          {% if site.middle_name %}{{ site.middle_name }} {% endif %}{{ site.last_name }}
+          {%- if name_parts.size > 1 %}
+            <em>({{ name_parts[1] }}</em>
+          {%- endif -%}
+        {%- else -%}
+          {{ site.title }}
+        {%- endif -%}
+      </h1>
+      {% if page.lede %}
+        <p class="home-lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {% endif %}
+      <div class="home-bio">{{ content }}</div>
+      {% if page.links %}
+        <div class="home-links">
+          {% for link in page.links %}
+            {% if link.url contains '://' or link.url contains 'mailto:' %}
+              {% assign link_url = link.url %}
+            {% else %}
+              {% assign link_url = link.url | relative_url %}
+            {% endif %}
+            <a href="{{ link_url }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
 
-  <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="home-portrait">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
+            include figure.liquid loading="eager" path=profile_image_path class="home-portrait-img" sizes="(min-width: 768px) 260px, 120px"
+            alt=page.profile.image_alt cache_bust=true
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="home-portrait-caption">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
+  {% if page.interests %}
+    <section class="home-section">
+      <h2 class="home-label">Research</h2>
+      <p class="home-interests">
+        {%- for interest in page.interests -%}
+          <span>{{ interest }}</span>
+        {%- endfor -%}
+      </p>
+    </section>
+  {% endif %}
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+  {% assign show_news = false %}
+  {% if page.announcements and page.announcements.enabled %}
+    {% assign show_news = true %}
+  {% endif %}
+  {% if show_news or page.education %}
+    <section class="home-section">
+      <h2 class="home-label">Recent</h2>
+      <div class="home-two">
+        {% if show_news %}
+          <div>
+            <h3 class="home-sublabel">
+              <a href="{{ '/news/' | relative_url }}">News</a>
+            </h3>
+            {% include news.liquid limit=true %}
+          </div>
+        {% endif %}
+        {% if page.education %}
+          <div>
+            <h3 class="home-sublabel">Education</h3>
+            <ul class="home-edu">
+              {% for item in page.education %}
+                <li>
+                  <span class="home-meta">{{ item.years }}</span>
+                  {{ item.degree }} <em>— {{ item.school }}</em>
+                </li>
+              {% endfor %}
+              {% if page.fellowships %}
+                <li class="home-honors">
+                  <span class="home-meta">Fellowships</span>
+                  {{ page.fellowships | join: ' · ' }}
+                </li>
+              {% endif %}
+            </ul>
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
+    </section>
+  {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <!-- Latest posts -->
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <section class="home-section">
+      <h2 class="home-label">
+        Latest posts
+        <a href="{{ '/blog/' | relative_url }}">All posts →</a>
+      </h2>
+      <div>{% include latest_posts.liquid %}</div>
+    </section>
+  {% endif %}
+
+  <!-- Selected papers -->
+  {% if page.selected_papers %}
+    <section class="home-section">
+      <h2 class="home-label">
+        Selected work
+        <a href="{{ '/publications/' | relative_url }}">All publications →</a>
+      </h2>
+      <div>{% include selected_papers.liquid %}</div>
+    </section>
+  {% endif %}
+
+  <!-- Social -->
+  {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">{% include social.liquid %}</div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+  {% endif %}
+
+  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+    {% include newsletter.liquid center=true %}
+  {% endif %}
 </div>

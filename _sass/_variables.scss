@@ -32,6 +32,25 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Scholar palette (light: paper + ink + oxblood, dark: warm charcoal + rose)
+$paper-color: #fbfaf7;
+$paper-card-color: #fffefb;
+$ink-color: #1c1b19;
+$ink-muted-color: #625e56;
+$ink-faint-color: #8f8a80;
+$rule-color: #e3dfd6;
+$oxblood-color: #8f1d2c;
+$oxblood-soft-color: #f4e6e6;
+
+$night-color: #151412;
+$night-card-color: #1d1c19;
+$night-text-color: #ece9e2;
+$night-muted-color: #a8a397;
+$night-faint-color: #7a766c;
+$night-rule-color: #2f2d29;
+$rose-color: #e8848e;
+$rose-soft-color: #3a2326;
+
 // Theme colors
 
 $code-bg-color-light: rgba($purple-color, 0.05);
