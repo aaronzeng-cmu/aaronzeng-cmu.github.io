@@ -11,3 +11,6 @@ assets/libs/
 node_modules/
 vendor
 .idea
+# Local-only: redesign samples and Claude preview config
+_design-samples/
+.claude/
